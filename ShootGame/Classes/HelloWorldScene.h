@@ -5,6 +5,11 @@
 
 class HelloWorld : public cocos2d::CCLayer
 {
+private: 
+    
+    cocos2d::CCSpriteBatchNode * _batchNode; 
+    
+    cocos2d::CCSprite * _ship;
 public:
     // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
     virtual bool init();  
